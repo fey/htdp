@@ -1,5 +1,4 @@
 install:
-	raco pkg install --skip-installed htdp
 	raco pkg install --skip-installed rackunit
 	raco pkg install --skip-installed racket-langserver
 	raco pkg install --skip-installed review
