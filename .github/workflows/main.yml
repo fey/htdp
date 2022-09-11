@@ -14,8 +14,14 @@ jobs:
           architecture: 'x64'
           distribution: 'full'
           variant: 'CS'
-          version: 'current'
+          version: '8.6'
           dest: '/opt/racket' # ignored on macOS and Windows
+      - name: Cache node_modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-racket-8.6
+
       - run: make install
       - run: make lint
       - run: make test
