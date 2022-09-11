@@ -1,7 +1,7 @@
 #lang htdp/bsl
 (require rackunit)
 
-(define (string-delete string i) (if (= (string-length string) 0)
+(define (string-delete string i) (if [= (string-length string) 0]
                                   ""
                                   (string-append
                                                 (substring string 0 i)
