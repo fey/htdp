@@ -1,6 +1,8 @@
-#lang racket
-(require 2htdp/image)
-(require 2htdp/universe)
+#lang htdp/bsl
 
-(define (path-to-origin x y)
+(require rackunit)
+
+(define (origin-distance x y)
   (sqrt (+ (* x x) (* y y))))
+
+(check-expect (origin-distance 3 4) 5)
