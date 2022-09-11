@@ -1,8 +1,8 @@
 install:
-	raco pkg install htdp
-	raco pkg install rackunit
-	raco pkg install racket-langserver
-	raco pkg install review
+	raco pkg install --skip-installed htdp
+	raco pkg install --skip-installed rackunit
+	raco pkg install --skip-installed racket-langserver
+	raco pkg install --skip-installed review
 
 test:
 	raco test 02

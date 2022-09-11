@@ -15,6 +15,7 @@ jobs:
           distribution: 'full'
           variant: 'CS'
           version: 'current'
+          dest: '/opt/racket' # ignored on macOS and Windows
       - run: make install
       - run: make lint
       - run: make test
